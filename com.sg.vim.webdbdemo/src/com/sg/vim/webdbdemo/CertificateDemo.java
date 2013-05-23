@@ -34,12 +34,17 @@ public class CertificateDemo {
 
     private static final String PARA_LIMIT = "limit";
 
+    
+    
+    
+    
     // 合格证查询接口
     public static void main(String[] args) {
         
         
         Map<String, String> parameters = getQueryParameter();
         System.out.println(parameters);
+        
         try {
             ResultSet rs = getResultSet(URL_CERT,parameters);
             int resultCount = rs.getCount();
