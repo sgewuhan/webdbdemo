@@ -36,6 +36,8 @@ public class CertificateDemo {
 
     
     
+    
+    
     // 合格证查询接口
     public static void main(String[] args) {
         
