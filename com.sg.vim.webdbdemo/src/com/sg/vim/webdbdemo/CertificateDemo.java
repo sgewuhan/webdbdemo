@@ -42,6 +42,7 @@ public class CertificateDemo {
         
         Map<String, String> parameters = getQueryParameter();
         System.out.println(parameters);
+        
         try {
             ResultSet rs = getResultSet(URL_CERT,parameters);
             int resultCount = rs.getCount();
