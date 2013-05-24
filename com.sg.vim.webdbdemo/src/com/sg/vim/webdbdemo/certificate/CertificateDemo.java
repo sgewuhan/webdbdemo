@@ -1,4 +1,4 @@
-package com.sg.vim.webdbdemo;
+package com.sg.vim.webdbdemo.certificate;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -43,7 +43,7 @@ public class CertificateDemo {
         System.out.println(parameters);
         
         try {
-            ResultSet rs = getResultSet(URL_CERT,parameters);
+            CertificateResultSet rs = getResultSet(URL_CERT,parameters);
             int resultCount = rs.getCount();
             System.out.println(resultCount);
             List<Certificate> result = rs.getResult();
@@ -108,7 +108,7 @@ public class CertificateDemo {
      * @return 结果字符串
      * @throws IOException
      */
-    private static ResultSet getResultSet(String url, Map<String, String> parameters) throws Exception {
+    private static CertificateResultSet getResultSet(String url, Map<String, String> parameters) throws Exception {
         // 构造HttpClient的实例
         HttpClient httpClient = new HttpClient();
         PostMethod method = new PostMethod(url);
@@ -131,7 +131,7 @@ public class CertificateDemo {
             Gson g = new Gson();
             String json = new String(responseBody,"utf8");
             System.out.println(json);
-            return g.fromJson(json , ResultSet.class);
+            return g.fromJson(json , CertificateResultSet.class);
         } finally {
             // 释放连接
             method.releaseConnection();

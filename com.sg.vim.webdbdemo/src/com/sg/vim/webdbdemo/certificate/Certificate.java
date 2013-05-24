@@ -1,4 +1,4 @@
-package com.sg.vim.webdbdemo;
+package com.sg.vim.webdbdemo.certificate;
 
 public class Certificate {
     private String Veh_Baud ;

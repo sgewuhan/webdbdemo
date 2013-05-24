@@ -1,8 +1,8 @@
-package com.sg.vim.webdbdemo;
+package com.sg.vim.webdbdemo.certificate;
 
 import java.util.List;
 
-public class ResultSet {
+public class CertificateResultSet {
     private int count;
     private List<Certificate> result;
     public void setCount(int count) {
