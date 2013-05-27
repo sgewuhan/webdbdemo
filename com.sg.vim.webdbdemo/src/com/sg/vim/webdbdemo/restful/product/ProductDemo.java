@@ -1,7 +1,6 @@
 package com.sg.vim.webdbdemo.restful.product;
 
 import java.io.IOException;
-import java.util.List;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpStatus;
